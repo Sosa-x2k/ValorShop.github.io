@@ -1,0 +1,99 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #c0c0c0;
+    background: #111;
+    overflow: hidden;
+}
+
+/* Star Background (canvas) */
+#starCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: #111;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px 10px; /* Adjusted padding to keep the header slightly lower */
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px; /* Space between logo and nav */
+}
+
+/* Adjusted nav positioning for a middle-right alignment */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between nav links */
+    margin-left: 60%; /* Shifted slightly more to the right */
+}
+
+nav a {
+    color: #c0c0c0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #6c63ff;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 10%;
+    max-width: 600px;
+}
+
+.link {
+    color: #6c63ff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #6c63ff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #a9a9a9;
+    margin-bottom: 30px;
+}
+
+.webstore-button {
+    background-color: transparent;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.webstore-button:hover {
+    background-color: #6c63ff;
+    color: #fff;
+}
